@@ -42,3 +42,16 @@ For setup node use standard [install script](https://github.com/phpcoinn/node/wi
 Important is that the node is fully synced in order to have a full list of live peers. 
 
 That peers will then receive any updates on dapp.
+
+## Setup dapp address
+
+For running dapp owner on node it must have configured and assigned address. 
+
+By that address all nodes must access node dapp. 
+
+So it is important that the address is verified, i.e. it must record the public key on the blockchain.
+
+Create a new PHPCoin address which will be assigned to dapp and verify it.
+
+For this tutorial we will user node main2 and setup dapp on address: PoApBr2zi84BEw2wtseaA2DtysEVCUnJd7
+
