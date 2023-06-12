@@ -2,7 +2,7 @@
 
 Here is a tutorial on how you can create and deploy your own dapp on php coin network.
 
-As an example we will create an app that login users to blockchain with gateway api and allows them to check balance (public API access).
+As an example we will create an app that login users to blockchain with [gateway](https://main1.phpcoin.net/dapps.php?url=PeC85pqFgRxmevonG6diUwT4AfF7YUPSm3/gateway) api and allows them to check balance (public API access).
 
 Also as an example of private access we will allow the user to store its address label on a node.
 
