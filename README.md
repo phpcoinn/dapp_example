@@ -126,6 +126,10 @@ We just need to write calling functions.
 
 When a user is logged in we can call dapp api to create, update or delete its label. 
 
+For creating label user must sign api call with his private key, to ensure that only address owner can set/delete label.
+
+For that is used dateway sign api.
+
 For storing data we can use a node database or any other storage engine, but in our case we will use a simple json file which will be stored only on the owner node in a secure folder.
 
 But as an example if you want truly decentralized storage then you will put this json file in the dapp folder so it will be propagated on other nodes. 
@@ -134,10 +138,11 @@ Also you can use any other decentralized storage solution.
 
 At the end when smart contracts are implemented then blockchain itself will be used for that.
 
+On other nodes there will be function in explorer which will retrieve and show label for address. 
+
 Api functions will be considered node owned because they can execute only on node owner.
 
 If another node executes it, it will automatically redirect and execute on the node owner.
-
 
 In files there are explanations of what functions do.
 
