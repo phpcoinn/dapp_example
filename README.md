@@ -15,6 +15,7 @@ This app when published can run on any node, but storing address labels will be 
 Then the app will be used to show a label of address on other nodes.
 
 Full deployed dapp is available on address:
+
 https://main2.phpcoin.net/dapps.php?url=PoApBr2zi84BEw2wtseaA2DtysEVCUnJd7/labeler
 
 ## Setup new node
