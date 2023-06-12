@@ -53,5 +53,49 @@ So it is important that the address is verified, i.e. it must record the public 
 
 Create a new PHPCoin address which will be assigned to dapp and verify it.
 
-For this tutorial we will user node main2 and setup dapp on address: PoApBr2zi84BEw2wtseaA2DtysEVCUnJd7
+For this tutorial we will user node main2 and setup dapp on address: **PoApBr2zi84BEw2wtseaA2DtysEVCUnJd7**
+
+## Configure dapp address in node
+
+Open config of node and configure dapp section.
+
+Enable it.
+
+It is advisable to disable automatic propagation during development.
+
+After app is ready and tested then you can re enable it, so any further changes will be propagated to other nodes.
+
+Config is in file config/config.inc.php
+
+```
+/**
+* Configuration for decentralized apps
+*/
+
+//Set true to enable hosting of dapp
+$_config['dapps']=true;
+
+//Public key of verified dapp address
+$_config['dapps_public_key']="PZ...ER";
+
+//Private key of verified dapp address
+$_config['dapps_private_key']="Lzhp...xtzM";
+
+//Set if you do not want to update node with other dapps
+$_config['dapps_anonymous']=false;
+
+//If true you need to manually propagate dapp after changes
+$_config['dapps_disable_auto_propagate']=true;
+```
+
+After setting config execute command to initialize dapp:
+
+```
+php cli/util.php propagate-dapps
+```
+
+This will create a new folder named with dapp address, and set permissions.
+
+All files for your app you can create and update in this folder.
+
 
