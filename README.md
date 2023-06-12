@@ -54,7 +54,7 @@ By that address all nodes must access node dapp.
 
 So it is important that the address is verified, i.e. it must record the public key on the blockchain.
 
-Create a new PHPCoin address which will be assigned to dapp and verify it.
+[Create](https://github.com/phpcoinn/node/wiki/Creating-address) a new PHPCoin address which will be assigned to dapp and [verify](https://github.com/phpcoinn/node/wiki/Verifying-address) it.
 
 For this tutorial we will user node main2 and setup dapp on address: **PoApBr2zi84BEw2wtseaA2DtysEVCUnJd7**
 
