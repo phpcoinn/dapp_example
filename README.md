@@ -147,9 +147,11 @@ Dapp files are executed in an isolated environment so there are some restriction
 
 Reading a file system is only possible inside its own folder.
 
-Executing system functions us disabled, so it is on the developer how to configure or overcome these rules.
+Executing system functions is disabled, so it is on the developer how to configure or overcome these rules.
 
 On the other hand if a file is run on node owner it can then use protected node-only functions to execute code.
+
+In this case node realted functions ae located in file secure/[dapps.local.inc.php](https://github.com/phpcoinn/dapp_example/blob/main/secure/dapps.local.inc.php) which should be stored in include folder.
 
 ## Publish dapp
 
