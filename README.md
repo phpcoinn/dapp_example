@@ -28,7 +28,7 @@ Deployed dapp is then distributed over the network to other nodes.
 
 Dapps can be public, private or both.
 
-Public dapp can run on any node, execute common api functions and do not depend on node software. An example of this app is the gateway app.
+Public dapp can run on any node, execute common api functions and do not depend on node software. An example of this app is the [gateway](https://main1.phpcoin.net/dapps.php?url=PeC85pqFgRxmevonG6diUwT4AfF7YUPSm3/gateway) app.
 
 Private dapp can run on any node but for some functionality need to contact the dapp owner. 
 
