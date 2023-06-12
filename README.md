@@ -98,4 +98,20 @@ This will create a new folder named with dapp address, and set permissions.
 
 All files for your app you can create and update in this folder.
 
+## Write dapp pages
+
+Then in the dapp folder which is named by address you can write a complete web app as you normally do but with some restrictions and rules.
+
+Our tutorial app will be simple because it has only one page accessible by user.
+
+But we will make it in a separate folder so we can create in future more different apps under one address.
+
+Lets call our app simple as a Labeler so we will create a folder where we will store app files.
+
+We will have three files:
+- index.php - index page visible for users
+- api.php - file which will be called from index or form remote nodes
+- functions.php - file with common functions
+
+Here is structure of dapp folder
 
