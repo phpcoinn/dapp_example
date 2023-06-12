@@ -113,5 +113,49 @@ We will have three files:
 - api.php - file which will be called from index or form remote nodes
 - functions.php - file with common functions
 
-Here is structure of dapp folder
+We will hold logged in users in session.
+
+Using gateway auth we do not need to worry about the login process because gateway handles it through its own api. 
+
+We just need to write calling functions.
+
+When a user is logged in we can call dapp api to create, update or delete its label. 
+
+For storing data we can use a node database or any other storage engine, but in our case we will use a simple json file which will be stored only on the owner node in a secure folder.
+
+But as an example if you want truly decentralized storage then you will put this json file in the dapp folder so it will be propagated on other nodes. 
+
+Also you can use any other decentralized storage solution. 
+
+At the end when smart contracts are implemented then blockchain itself will be used for that.
+
+Api functions will be considered node owned because they can execute only on node owner.
+
+If another node executes it, it will automatically redirect and execute on the node owner.
+
+
+In files there are explanations of what functions do.
+
+The most important part is on top of the file, functions that initialize dapp and provide integration with a node.
+
+Dapp files are executed in an isolated environment so there are some restrictions when it comes to writing code.
+
+Reading a file system is only possible inside its own folder.
+
+Executing system functions us disabled, so it is on the developer how to configure or overcome these rules.
+
+On the other hand if a file is run on node owner it can then use protected node-only functions to execute code.
+
+## Publish dapp
+
+After we finish files we will publish dapp to the network and try it on any node.
+
+If it is not enabled auto publish, when you finish building dapp you can publish it with command:
+
+```
+php cli/util.php propagate-dapps
+```
+
+It will be then propagated to other nodes.
+
 
