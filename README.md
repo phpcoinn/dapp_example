@@ -105,6 +105,8 @@ All files for your app you can create and update in this folder.
 
 Then in the dapp folder which is named by address you can write a complete web app as you normally do but with some restrictions and rules.
 
+For all available functions you can check [demo](https://main1.phpcoin.net/dapps.php?url=PeC85pqFgRxmevonG6diUwT4AfF7YUPSm3/demo) page.
+
 Our tutorial app will be simple because it has only one page accessible by user.
 
 But we will make it in a separate folder so we can create in future more different apps under one address.
